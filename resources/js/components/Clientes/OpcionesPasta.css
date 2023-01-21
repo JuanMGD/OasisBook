@@ -1,0 +1,45 @@
+.contenedor-opciones {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+.contenedor-opciones .opcion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* gap: 1rem; */
+}
+
+.contenedor-opciones .opcion .btn-opcion {
+    width: 100%;
+    padding: 0.25rem 0.5rem;
+    /* margin-left: 1rem; */
+    border: 1px solid rgba(0, 0, 0, 0.175);
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+.contenedor-opciones .opcion .btn-opcion .pasta{
+    font-weight: 600;
+}
+
+.contenedor-opciones .opcion .btn-opcion .precio{
+    color: #079dc7;
+}
+
+.contenedor-opciones .opcion .btn-opcion:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.contenedor-opciones .opcion .btn-opcion.seleccionado,
+.contenedor-opciones .opcion .btn-opcion.seleccionado:hover {
+    background-color: #F4F7FD;
+    border: 1px solid #079dc7;
+}
+
+
+.contenedor-opciones .opcion .btn-opcion p {
+    margin: 0;
+}

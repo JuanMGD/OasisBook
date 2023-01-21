@@ -1,0 +1,90 @@
+.contenedor {
+    width: 100%;
+    max-width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    background: linear-gradient(180deg, #005283 0%, #0bc3e9 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-contenedor {
+    width: 30%;
+    min-width: 300px;
+    margin: 0;
+    padding: 1.5rem 1.5rem 4rem 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 1.5rem;
+}
+
+.login-contenedor .logo-login {
+    font-weight: bold;
+    /* margin: calc(1.5rem + 15px) 0; */
+    text-align: center;
+    color: var(--text-secondary);
+    /* background: var(--bg-secondary); */
+
+    font-size: 0.7rem;
+
+    /* text-transform: uppercase; */
+    letter-spacing: 0.3ch;
+    width: 100%;
+    /* display: flex;
+    align-items: center; */
+    /* width: 6rem;
+    height: 6rem; */
+    /* margin: 0; */
+    /* background: #FFFFFF; */
+    /* border: 1px solid #DDDDDD; */
+    /* box-sizing: border-box; */
+    /* box-shadow: 1px 5px 27px -9px rgba(0, 0, 0, 0.25); */
+    /* border-radius: 50%; */
+    /* padding: 0.25rem; */
+}
+
+.login-contenedor .logo-login .text-logo {
+    margin: 1rem 0;
+    width: 100%;
+    font-size: 2rem;
+    font-family: 'Comfortaa', cursive;   
+    background: -webkit-linear-gradient(to right, #005283, #0bc3e9);
+    background: linear-gradient(to right, #005283, #0bc3e9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.login-contenedor .titulo {
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.login-contenedor .input-login {
+    width: 70%;
+    margin: 1rem auto 0.25rem auto; 
+}
+
+.login-contenedor .btnLogin {
+    border: 1px solid #0bc3e9;
+    background-color: #FFFFFF;
+    color: #0bc3e9;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-contenedor .btnLogin:hover {
+    background-color: #0bc3e9;
+    color: #FFFFFF;
+}
