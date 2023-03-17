@@ -29,13 +29,12 @@ const LayoutTienda = () => {
       // if (token) {
       //   tokenAuth(token);
       // }
-      // usuarioAutenticado();
+      usuarioAutenticado();
       // obtenerCategorias();
       // eslint-disable-next-line
     }, []);
     
     useEffect(() => {
-      console.log(token);
       if (token === null) navigate("/login");
       else obtenerCategorias();
       // eslint-disable-next-line

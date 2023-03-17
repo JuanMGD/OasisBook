@@ -94,7 +94,7 @@ const LibroState = props => {
         try {
             iniciarLoader();
             const resultado = await axios.post('http://localhost:8000/api/showBooksByCategory', 
-            {category_id: id},
+            {0: id},
             { headers: { Authorization: `Bearer ${token}` }})
             console.log(resultado);
             dispatch({

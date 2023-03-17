@@ -13,13 +13,13 @@ const LayoutAdmin = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        // usuarioAutenticado();
+        usuarioAutenticado();
     }, []);
 
     useEffect(() => {
       console.log(rol);
       if (!token) navigate("/login");
-      if (token && !rol) navigate("/");
+      if (token && !rol && !cargando) navigate("/");
     }, [token, rol]);
 
     return (

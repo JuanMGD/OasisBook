@@ -196,7 +196,7 @@ class BookController extends Controller
         $book->category_id = $request->input('category_id');
         $book->author_id = $request->input('author_id');
         $book->publisher_id = $request->input('publisher_id');
-        $book->save();
+        $book-> save();
         return [
             "id" => $book->id,
             "title" => $book->title,

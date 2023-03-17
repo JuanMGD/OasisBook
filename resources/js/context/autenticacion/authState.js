@@ -30,11 +30,13 @@ const AuthState = props => {
 
     const usuarioAutenticado = async () => {
         try {
-            const respuesta = await axios.post('http://localhost:8000/api/getUserByToken', { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }});
-            console.log(respuesta);
+            // const respuesta = await axios.post('http://localhost:8000/api/getUserByToken', { headers: { Authorization: `Bearer ${state.token}` }});
+            const resultado = await axios.post('http://localhost:8000/api/getUserByToken', {},
+            { headers: { Authorization: `Bearer ${state.token}` }});
+            console.log(resultado);
             dispatch({
                 type: OBTENER_USUARIO,
-                payload: respuesta.data
+                payload: resultado.data
             });
         } catch (error) {
             console.log(error);

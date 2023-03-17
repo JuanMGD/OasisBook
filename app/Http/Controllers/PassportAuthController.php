@@ -51,7 +51,7 @@ class PassportAuthController extends Controller
         }
     }
 
-    public function getUserByToken(Request $request)
+    public function getUserByToken()
     {
         $token = auth('api')->user();
         $user = $token ? User::find($token->id) : null;
